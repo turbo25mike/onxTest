@@ -20,7 +20,10 @@ struct ContentView: View {
     }
     
     func openUrl() {
+        
         let url = URL(string: "onxhunt://ranged_waypoint")!
+        //let url = URL(string: "onxhunt-beta://ranged_waypoint")!
+        //let url = URL(string: "comgooglemaps://")!
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
 }
